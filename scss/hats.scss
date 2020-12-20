@@ -1,0 +1,80 @@
+// Christmas Hats
+// *------------------------------------------------*
+@if $enable-hats == "true" {
+  .topic-avatar {
+    position: relative;
+  }
+
+  .topic-avatar > a::after {
+    content: "";
+    position: absolute;
+    top: -40%;
+    left: -27%;
+    width: 130%;
+    height: 100%;
+    background: url($hat) no-repeat center;
+    background-size: contain;
+  }
+
+  .topic-post:nth-of-type(2n) .topic-avatar > a::after {
+    transform: rotate(-5deg) translateX(-4px);
+  }
+
+  .topic-post:nth-of-type(3n) .topic-avatar > a::after {
+    transform: scaleX(-1) rotate(5deg) translateX(-8px);
+  }
+
+  .topic-post:nth-of-type(5n) .topic-avatar > a::after {
+    transform: rotate(5deg) translateX(4px);
+  }
+
+  .topic-list {
+    .posters > a.latest {
+      position: relative;
+    }
+    .posters > a.latest::after {
+      content: "";
+      position: absolute;
+      top: -14px;
+      left: -5px;
+      width: 32px;
+      height: 24px;
+      background: url($hat) no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  .topic-list tr:nth-of-type(3n) .posters > a.latest::after {
+    transform: scaleX(-1);
+    left: 2px;
+  }
+
+  #current-user {
+    div {
+      position: relative;
+    }
+    div::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: -28px;
+      left: -10px;
+      width: 45px;
+      height: 45px;
+      background: url($hat) no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  .latest-topic-list-item .topic-poster > a::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -25px;
+    left: -5px;
+    width: 80%;
+    height: 80%;
+    background: url($hat) no-repeat center;
+    background-size: contain;
+  }
+}

@@ -1,0 +1,20 @@
+@import 'variables';
+
+// Navigation
+// *------------------------------------------------*
+.nav-pills>li>a:hover {
+  color: $color-black;
+  border-bottom: 0;
+  background-color: transparent;
+}
+.navigation-toggle {
+  padding-left: 17px;
+}
+
+// Christmas Hat
+// *------------------------------------------------*
+@if $enable-hats == "true" {
+  .topic-avatar > a::after {
+    top: -65%;
+  }
+}

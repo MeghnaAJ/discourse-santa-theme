@@ -1,0 +1,24 @@
+{
+  "name": "discourse-santa-theme",
+  "about_url": null,
+  "license_url": null,
+  "assets": {
+    "hat": "assets/hat.png"
+  },
+  "color_schemes": {
+    "santa": {
+      "primary": "222222",
+      "secondary": "FFF6F6",
+      "tertiary": "185230",
+      "quaternary": "e45735",
+      "header_background": "CC3336",
+      "header_primary": "ffffff",
+      "highlight": "014C81",
+      "highlight-medium": "d0f1de",
+      "danger": "B8FFB8",
+      "success": "009900",
+      "love": "185230"
+    }
+  },
+  "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966"
+}

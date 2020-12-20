@@ -1,0 +1,60 @@
+.topic-list>tbody {
+  border-top: 3px solid $tertiary;
+  box-shadow: 0px 1px 6px rgba(0,0,0,0.1);
+  background-color: $color-white;
+}
+
+.topic-list th {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: $tertiary;
+  font-weight: bold;
+}
+
+.nav-pills>li>a {
+  font-size: inherit;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 1rem;
+  border-bottom: 2px solid transparent;
+  &:hover {
+    color: $tertiary;
+    border-bottom: 2px solid $tertiary-hover;
+    background-color: transparent;
+  }
+}
+
+.nav-pills>li a.active {
+  background-color: transparent;
+  color: $color-black;
+  font-weight: 700;
+  border-bottom: 2px solid $tertiary;
+  &:hover {
+    border-bottom: 2px solid $tertiary-hover;
+    color: $tertiary;
+  }
+}
+
+.nav-stacked {
+  background: $tertiary-low;
+}
+
+.select-kit-header {
+  border-radius: $layout-button-radius;
+}
+
+.menu-panel li {
+  a.widget-link:hover, a.widget-link:focus {
+    background-color: $tertiary-low;
+    color: $color-black;
+  }
+  .d-icon {
+    color: $tertiary;
+  }
+}
+
+.drop-down-mode .d-header-icons {
+  .icon:hover:after, .icon:focus:after, .active .icon:after {
+    border-top-color: transparent;
+  }
+}

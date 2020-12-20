@@ -1,0 +1,57 @@
+.d-header {
+  box-shadow: none;
+  padding: 0.5em 0;
+  .d-icon {
+   color: $header_primary;
+  }
+  .icon {
+    border-radius: 40px;
+    margin-left: 0.5em;
+  }
+}
+
+.menu-panel {
+  background: $header_primary;
+  border: 5px solid $highlight-medium;
+  box-shadow: none;
+  margin-top: 1.10em;
+}
+
+.d-header {
+  img.avatar {
+    border-radius: 20px;
+  }
+  .d-header-icons {
+    .d-icon {
+      color: $header_primary;
+      font-size: 22px;
+    }
+    .header-dropdown-toggle {
+      margin-left: 1rem;
+    }
+  }
+  #site-logo {
+    filter: invert(get_invert($logo-invert-colors)) hue-rotate(#{$logo-hue-rotation}deg) brightness(calc((#{$logo-brightness} / 10) + 1));
+  }
+}
+
+div.menu-links-header .menu-links-row {
+  color: $color-white;
+  li a.active {
+    .d-icon {
+      color: $tertiary;
+    }
+    &:focus,&:hover {
+      color: $color-white;
+    }
+  }
+}
+
+.menu-panel li a.widget-link:hover {
+  background-color: $tertiary;
+  color: $color-white;
+}
+
+.menu-panel li a.widget-link .d-icon {
+  color: $tertiary;
+}

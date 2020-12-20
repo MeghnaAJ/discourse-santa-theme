@@ -1,0 +1,159 @@
+@import "variables";
+@import "header";
+@import "topic-list";
+@import "hats";
+
+// Buttons
+// *------------------------------------------------*
+.btn {
+  border-radius: $layout-button-radius;
+  background-color: $tertiary;
+  color: $color-white;
+  .d-icon {
+    color: $color-white;
+  }
+}
+
+#create-topic {
+  background-color: $tertiary;
+  color: $color-white;
+  .fa {
+    color: $color-white;
+  }
+  &:hover {
+    background: $tertiary-hover;
+    color: $secondary;
+    .fa {
+      color: $color-white;
+    }
+  }
+}
+
+.btn[href] {
+  color: $color-white;
+}
+
+// Form
+// *------------------------------------------------*
+.badge-category-bg, .badge-category-parent-bg {
+  border-radius: $layout-border-radius;
+}
+
+.badge-wrapper.bullet {
+  .badge-category-parent-bg {
+    width: 8px;
+    margin-right: 0;
+  }
+  .badge-category-parent-bg+.badge-category-bg {
+    width: 8px;
+  }
+}
+
+.discourse-no-touch {
+  .small-action button .d-icon, nav.post-controls button .d-icon {
+    color: $tertiary;
+  }
+  .small-action button:hover {
+    background: $tertiary-hover;
+    .d-icon {
+      color: $color-white;
+    }
+  }
+  nav.post-controls button:hover {
+    background: $tertiary-hover;
+    .d-icon {
+      color: $color-white;
+    }
+  }
+}
+
+nav.post-controls .actions button.bookmark.bookmarked .d-icon {
+  color: $tertiary;
+}
+
+#topic-footer-buttons .bookmark.bookmarked {
+  .d-icon-bookmark, .d-icon-discourse-bookmark-clock {
+    color: $color-white;
+  }
+}
+
+.discourse-no-touch .btn-default:hover, .discourse-no-touch .btn-default.btn-hover,
+ .discourse-no-touch #show-tag-info:hover, .discourse-no-touch #show-tag-info.btn-hover,
+ .discourse-no-touch .user-badges .btn:hover, .discourse-no-touch .user-badges .btn.btn-hover {
+  background: $tertiary-hover;
+  color: $color-white;
+}
+
+.list-cell, .table-heading, .category-list td, .category-list th {
+  padding: 12px 5px;
+  color: $tertiary;
+}
+
+// Search
+// *------------------------------------------------*
+.search-container .search-advanced-sidebar {
+  .search-advanced-title {
+    background: $tertiary;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+  }
+  .search-advanced-filters {
+    background: $color-honeydew;
+    padding: 1em;
+  }
+}
+
+.modal-header {
+  background-color: $tertiary;
+  color: $color-white;
+}
+
+.btn-flat.close .d-icon {
+  color: $color-white;
+}
+
+// Admin
+// *------------------------------------------------*
+.admin-controls {
+  .controls {
+    background: $tertiary-low;
+  }
+  .nav-pills {
+    background-color: $tertiary-low;
+  }
+  .nav-pills>li a.active {
+    background: none;
+    color: $tertiary;
+  }
+}
+
+.discourse-no-touch .btn:hover, .discourse-no-touch .btn.btn-hover {
+  background: $tertiary-hover;
+  color: $color-white;
+}
+
+.posts-wrapper {
+  border: 2px solid #e3ecf4;
+  border-radius: 0 0 20px 20px;
+  box-shadow: inset 0 2px 0 0 rgba(255,255,255,0.4);
+  border-top: none;
+  background: #fff;
+  padding: 1em;
+}
+
+.popup-menu {
+  .d-button-label {
+    color: $color-black;
+  }
+  .widget-button:hover .d-button-label {
+    color: $color-white;
+  }
+}
+
+.reviewable-filters {
+  background: $color-honeydew;
+}
+
+.directory .me {
+  background-color: $color-honeydew;
+}
