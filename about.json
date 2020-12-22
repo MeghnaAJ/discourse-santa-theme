@@ -1,7 +1,8 @@
 {
   "name": "discourse-santa-theme",
-  "about_url": null,
-  "license_url": null,
+  "about_url": "https://meta.discourse.org/t/santa-a-christmas-theme-for-discourse/173856",
+  "license_url": "https://github.com/MeghnaAJ/discourse-santa-theme/blob/master/LICENSE",
+  "author": "Meghna",
   "assets": {
     "hat": "assets/hat.png"
   },
